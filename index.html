@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="lib/fullcalendar/core/main.js"></script>
+        <script src="lib/fullcalendar/daygrid/main.js"></script>
+        <script src="lib/fullcalendar/timegrid/main.js"></script>
+        <script src="lib/fullcalendar/list/main.js"></script>
+        <script src="lib/fullcalendar/interaction/main.js"></script>
+        <script src='lib/fullcalendar/core/locales/pl.js'></script>
+        <!-- FullCalendar CSS -->
+        <link href='lib/fullcalendar/core/main.css' rel='stylesheet' />
+        <link href='lib/fullcalendar/daygrid/main.css' rel='stylesheet' />
+        <link href='lib/fullcalendar/timegrid/main.css' rel='stylesheet' />
+        <link href='lib/fullcalendar/list/main.css' rel='stylesheet' />
+
+
+        <script src="elm.js"></script>
+        <script src="js/FullCalendar.js"></script>
+
+    </head>
+
+    <body>
+        <script>
+         var baseUri = window.location.origin;
+         var elmApp = Elm.Main.init({flags: {baseUri: baseUri, initialTime: Date.now()}});
+        </script>
+    </body>
+</html>
